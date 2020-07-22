@@ -1,0 +1,48 @@
+svg.svg1 {
+ height:15vw;
+ width:auto;
+  padding:10px;
+  display:block;
+  margin:auto;
+  top:35%;
+  z-index:10;
+  position:relative;
+    background: linear-gradient(
+     rgba(0, 0, 50, 0.8), 
+     rgba(0, 0, 50, 0.8)
+  ), url('../Ressources/Images/book4.jpg');
+ background-position:center;
+ background-repeat:no-repeat;
+ background-size:cover;
+ background-attachment:fixed;
+  transition:all 1s;
+}
+.svg0 {
+ fill:#fff;
+ stroke:#fff;
+ stroke-width:2;
+ stroke-miterlimit:10;
+ stroke-dasharray:1800;
+ opacity:1;
+ animation:animate 3s cubic-bezier(0,.23,1,.1)
+}
+@keyframes animate {
+ 0% {
+  opacity:0;
+  fill:none;
+  stroke-dashoffset:1800
+ }
+ 30% {
+  opacity:1;
+  fill:none;
+  stroke-dashoffset:1800
+ }
+ 90% {
+  fill:hsla(0,0%,100%,0)
+ }
+ to {
+  opacity:1;
+  fill:#fff;
+  stroke-dashoffset:0
+ }
+}
